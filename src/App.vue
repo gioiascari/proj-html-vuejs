@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HelloWorld from "./components/MyHeader.vue";
+import MyHeader from "./components/MyHeader.vue";
 
 export default {
   name: "App",

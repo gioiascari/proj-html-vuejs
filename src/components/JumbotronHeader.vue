@@ -81,9 +81,9 @@ export default {
 
 #logo span {
   font-size: 20px;
-  padding-left: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: $bg-btn;
   background-color: #52b9bb60;
   border-radius: 40px 0 0 40px;

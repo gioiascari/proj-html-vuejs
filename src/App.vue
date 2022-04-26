@@ -4,18 +4,21 @@
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <TopHeader />
     <JumbotronHeader />
+    <AdvTrailer />
   </div>
 </template>
 
 <script>
 import TopHeader from "./components/TopHeader.vue";
 import JumbotronHeader from "./components/JumbotronHeader.vue";
+import AdvTrailer from "./components/AdvTrailer.vue";
 
 export default {
   name: "App",
   components: {
     TopHeader,
     JumbotronHeader,
+    AdvTrailer,
   },
 };
 </script>

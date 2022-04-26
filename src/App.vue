@@ -2,17 +2,20 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <MyHeader />
+    <TopHeader />
+    <JumbotronHeader />
   </div>
 </template>
 
 <script>
-import MyHeader from "./components/MyHeader.vue";
+import TopHeader from "./components/TopHeader.vue";
+import JumbotronHeader from "./components/JumbotronHeader.vue";
 
 export default {
   name: "App",
   components: {
-    MyHeader,
+    TopHeader,
+    JumbotronHeader,
   },
 };
 </script>

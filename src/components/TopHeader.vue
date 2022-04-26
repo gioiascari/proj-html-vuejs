@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  name: "MyHeader",
+  name: "TopHeader",
 };
 </script>
 

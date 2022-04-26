@@ -3,13 +3,14 @@
     <div class="container">
       <div class="row py-4 align-items-center justify-content-between">
         <div class="col-2 col-sm-2 m-0">
-          <!-- NavBar -->
+          <!-- logo -->
           <div id="logo">
             <h1><span>NEX</span>GEN</h1>
           </div>
-          <!-- /NavBar -->
+          <!-- /logo -->
         </div>
         <div class="col-10">
+          <!-- NavBar -->
           <nav class="text-white d-flex justify-content-end">
             <ul
               v-for="(nav, i) in navBar"
@@ -21,8 +22,30 @@
             <i class="bi bi-person d-flex p-2"></i>
             <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
           </nav>
+          <!-- /NavBar -->
         </div>
       </div>
+      <!-- Testo centrale -->
+      <div class="row">
+        <div class="col-12 text-center py_5 d-flex justify-content-center">
+          <div class="central-text w-50">
+            <div class="title text-white">
+              <h1><strong>Financial Risk</strong></h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptate tempore saepe minima unde veniam, earum eum hic nihil
+                quos fugit dolorum atque autem distinctio quam omnis cumque
+                quis. Temporibus, tempore.
+              </p>
+            </div>
+            <div class="btn-container d-flex gap-3 justify-content-center">
+              <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
+              <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Testo centrale -->
     </div>
   </div>
 </template>
@@ -75,8 +98,13 @@ ul {
     color: white;
   }
 }
+
+// Utilities
 .btn_bg {
-  background-color: $bg-btn;
+  background-color: $btn-dark-green;
   color: white;
+}
+.py_5 {
+  padding-top: 100px;
 }
 </style>

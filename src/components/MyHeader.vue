@@ -5,7 +5,10 @@
         <div class="col-md-4">
           <!-- Open Hours -->
           <div class="openH font-color py-2">
-            <p class="m-0 fs-6">Open Hours: Mon - Sat. - 09:00-18:00</p>
+            <p class="m-0 fs-6">
+              <i class="bi bi-clock-fill"></i> Open Hours: Mon - Sat. -
+              09:00-18:00
+            </p>
           </div>
           <!-- Open Hours -->
         </div>
@@ -13,8 +16,19 @@
           <!-- Telephone number/mail/social info -->
           <div class="telephone font-color">
             <ul class="list-group d-flex flex-row">
-              <li class=""><a href="#">+1(305)1234-5678</a></li>
-              <li><a href="#"> hello@example.com</a></li>
+              <li class="p-2">
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i> +1(305)1234-5678</a
+                >
+              </li>
+              <li class="p-2">
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i> hello@example.com</a
+                >
+              </li>
+              <li class="p-2"><i class="bi bi-facebook"></i></li>
+              <li class="p-2"><i class="bi bi-twitter"></i></li>
+              <li class="p-2"><i class="bi bi-linkedin"></i></li>
             </ul>
           </div>
           <!-- /Telephone number/mail/social info -->

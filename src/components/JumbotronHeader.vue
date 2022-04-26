@@ -18,9 +18,8 @@
             >
               <li>{{ nav }}</li>
             </ul>
-            <button class="btn btn-outline-success" type="submit">
-              GET IN TOUCH
-            </button>
+            <i class="bi bi-person d-flex p-2"></i>
+            <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
           </nav>
         </div>
       </div>

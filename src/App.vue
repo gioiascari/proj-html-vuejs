@@ -6,6 +6,7 @@
     <JumbotronHeader />
     <AdvTrailer />
     <ResultNumbers />
+    <BusinessArea />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import TopHeader from "./components/TopHeader.vue";
 import JumbotronHeader from "./components/JumbotronHeader.vue";
 import AdvTrailer from "./components/AdvTrailer.vue";
 import ResultNumbers from "./components/ResultNumbers.vue";
+import BusinessArea from "./components/BusinessArea.vue";
 
 export default {
   name: "App",
@@ -22,6 +24,7 @@ export default {
     JumbotronHeader,
     AdvTrailer,
     ResultNumbers,
+    BusinessArea,
   },
 };
 </script>
@@ -35,5 +38,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 </style>

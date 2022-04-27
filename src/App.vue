@@ -7,6 +7,7 @@
     <AdvTrailer />
     <ResultNumbers />
     <BusinessArea />
+    <TeamArea />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import JumbotronHeader from "./components/JumbotronHeader.vue";
 import AdvTrailer from "./components/AdvTrailer.vue";
 import ResultNumbers from "./components/ResultNumbers.vue";
 import BusinessArea from "./components/BusinessArea.vue";
+import TeamArea from "./components/TeamArea.vue";
 
 export default {
   name: "App",
@@ -25,6 +27,7 @@ export default {
     AdvTrailer,
     ResultNumbers,
     BusinessArea,
+    TeamArea,
   },
 };
 </script>

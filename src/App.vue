@@ -9,6 +9,8 @@
     <BusinessArea />
     <TeamArea />
     <GetInTouch />
+    <JumbotronFooter />
+    <FooterBottom />
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import ResultNumbers from "./components/ResultNumbers.vue";
 import BusinessArea from "./components/BusinessArea.vue";
 import TeamArea from "./components/TeamArea.vue";
 import GetInTouch from "./components/GetInTouch.vue";
+import JumbotronFooter from "./components/JumbotronFooter.vue";
+import FooterBottom from "./components/FooterBottom.vue";
 
 export default {
   name: "App",
@@ -31,6 +35,8 @@ export default {
     BusinessArea,
     TeamArea,
     GetInTouch,
+    JumbotronFooter,
+    FooterBottom,
   },
 };
 </script>

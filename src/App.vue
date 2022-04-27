@@ -5,6 +5,7 @@
     <TopHeader />
     <JumbotronHeader />
     <AdvTrailer />
+    <ResultNumbers />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import TopHeader from "./components/TopHeader.vue";
 import JumbotronHeader from "./components/JumbotronHeader.vue";
 import AdvTrailer from "./components/AdvTrailer.vue";
+import ResultNumbers from "./components/ResultNumbers.vue";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     TopHeader,
     JumbotronHeader,
     AdvTrailer,
+    ResultNumbers,
   },
 };
 </script>

@@ -3,7 +3,7 @@
     <!-- Text Adv -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <div class="text-adv w-75 text-center">
+        <div class="text-adv w-75 text-center py-3">
           <p>INTRODUCTION VIDEO</p>
 
           <h2>

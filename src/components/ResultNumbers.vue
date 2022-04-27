@@ -73,7 +73,18 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.3);
+
   // filter: grayscale(100%) brightness(0.4);
+  .jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 span {
   background-color: $bg-opacity;

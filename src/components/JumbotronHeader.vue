@@ -68,6 +68,8 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 #logo {
   color: white;

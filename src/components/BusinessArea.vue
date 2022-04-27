@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12">
           <div class="text">
-            <p>OUR BUSINESS AREA</p>
+            <p class="font_color">OUR BUSINESS AREAS</p>
             <h1>
               <strong>Excellence in <span>Services</span></strong>
             </h1>
@@ -85,4 +85,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "@/style/mixin";
+
+span {
+  background-color: $bg-opacity;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+}
+</style>

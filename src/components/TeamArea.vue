@@ -35,10 +35,10 @@
                 </div>
               </div>
 
-              <div class="col-7 bg-primary">
+              <div class="col-7">
                 <div class="text-teams">
-                  <h1>{{ item.namePerson }}</h1>
-                  <p>{{ item.job }}</p>
+                  <h1 class="fs-6">{{ item.namePerson }}</h1>
+                  <p class="font_size">{{ item.job }}</p>
                   <b-icon
                     :icon="icon"
                     v-for="(icon, j) in item.icon"
@@ -92,5 +92,8 @@ export default {
   },
 };
 </script>
-
-<style></style>
+<style scoped lang="scss">
+.font_size {
+  font-size: 10px;
+}
+</style>

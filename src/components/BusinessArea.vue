@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black text-light">
-    <div class="container py-5">
+    <div class="container-md py-5">
       <!-- BusinessArea top text -->
       <div class="row">
         <div class="col-12">

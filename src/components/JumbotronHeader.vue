@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <div class="container">
+    <div class="container-md">
       <div class="row py-4 align-items-center justify-content-between">
         <div class="col-2 col-sm-2 m-0">
           <!-- logo -->

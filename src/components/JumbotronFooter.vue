@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron bg-black">
-    <div class="container p-4">
+    <div class="container-md p-4">
       <div class="row g-4 py-5">
         <div class="col-3">
           <div class="p-4 bg-dark rounded">

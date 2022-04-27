@@ -1,7 +1,7 @@
 <template>
   <div class="bg-first">
     <GetInTouchTop />
-    <div class="container py-5">
+    <div class="container-md py-5">
       <div class="row">
         <div class="col-12">
           <p>SEND A MESSAGE</p>

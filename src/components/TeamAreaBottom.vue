@@ -1,6 +1,6 @@
 <template>
   <div class="bg-container">
-    <div class="container p-4">
+    <div class="container-md p-4">
       <div class="row">
         <div class="col-12">
           <p>OUR EDITORIAL CONTENT</p>

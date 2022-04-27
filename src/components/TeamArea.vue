@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container py-4">
+    <div class="container-md py-4">
       <!-- Paragrafetto iniziale -->
       <div class="row">
         <div class="col-12">

@@ -1,5 +1,5 @@
 <template>
-  <div class="container p_5">
+  <div class="container-md p_5">
     <!-- Text Adv -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">

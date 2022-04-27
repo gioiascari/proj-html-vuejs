@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black text-white">
-    <div class="container p-5">
+    <div class="container-md p-5">
       <div class="row p-5">
         <div class="col-6">
           <div class="row">

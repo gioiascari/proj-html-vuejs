@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <div class="container p-5">
+    <div class="container-md p-5">
       <!-- Text Results Numbers -->
       <div class="row">
         <div class="col-12 text-white">

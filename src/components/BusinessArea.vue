@@ -12,8 +12,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-8">
+      <div class="row justify-content-between">
+        <div class="col-10">
           <p>
             We are leaders in providing consultancy services with a set of
             cutting-edge technologies and a team of experienced and renowned
@@ -21,8 +21,8 @@
           </p>
         </div>
         <!-- button -->
-        <div class="col-4">
-          <button class="btn btn-danger">SEE ALL</button>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+          <button type="button" class="btn btn_hover">SEE ALL</button>
         </div>
         <!-- /button -->
       </div>

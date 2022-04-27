@@ -20,7 +20,7 @@
               <li>{{ nav }}</li>
             </ul>
             <i class="bi bi-person d-flex p-2"></i>
-            <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
+            <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
           </nav>
           <!-- /NavBar -->
         </div>
@@ -37,8 +37,8 @@
               </p>
             </div>
             <div class="btn-container d-flex gap-3 justify-content-center">
-              <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
-              <button class="btn btn_bg" type="submit">GET IN TOUCH</button>
+              <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
+              <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
             </div>
           </div>
         </div>

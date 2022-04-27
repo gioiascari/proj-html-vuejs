@@ -18,7 +18,7 @@
                 world.
               </p>
             </div>
-            <button class="btn btn-danger">SEE ALL</button>
+            <button class="btn btn_hover">SEE ALL</button>
           </div>
         </div>
       </div>
@@ -71,6 +71,9 @@ export default {
 
 .bg-container {
   background-color: $bg-news;
+}
+.btn_hover {
+  color: black;
 }
 .fixed_bottom {
   bottom: 50px;

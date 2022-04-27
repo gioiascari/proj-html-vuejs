@@ -93,7 +93,7 @@
 
               <!-- BTN -->
               <div class="col-md-12">
-                <button class="btn bg-warning">SEND</button>
+                <button class="btn btn_hover">SEND</button>
               </div>
               <!-- / BTN -->
             </div>
@@ -124,7 +124,7 @@
           </div>
 
           <!-- /Contatti -->
-          <button class="btn btn-danger">View Map</button>
+          <button class="btn btn_hover1">View Map</button>
         </div>
         <!-- /Data Agency -->
       </div>
@@ -142,4 +142,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "@/style/mixin";
+.btn_hover {
+  color: black;
+}
+</style>

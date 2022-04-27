@@ -6,6 +6,28 @@ $bg-news: #e7eee9;
 $bg-service: #111117;
 $font-color: white;
 $bg-opacity: #52b9bb60;
+
+// ---------------------STYLE--------------------------------------
 .font_color {
   color: #52babb;
+}
+.bg_btn {
+  background-color: $color-green;
+}
+.btn_hover {
+  border-color: $color-green;
+  color: white;
+  &:hover {
+    background-color: $color-green;
+    color: white;
+  }
+}
+.btn_hover1 {
+  background-color: $color-green;
+  color: white;
+  &:hover {
+    border-color: $color-green;
+    background-color: transparent;
+    color: black;
+  }
 }

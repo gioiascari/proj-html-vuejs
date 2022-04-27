@@ -44,7 +44,7 @@
               </div>
             </div>
             <div class="btn-container py-3">
-              <button type="submit" class="btn btn_bg">SUBSCRIBE</button>
+              <button type="submit" class="btn btn_hover">SUBSCRIBE</button>
             </div>
           </form>
         </div>

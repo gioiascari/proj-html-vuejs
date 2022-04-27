@@ -8,6 +8,7 @@
     <ResultNumbers />
     <BusinessArea />
     <TeamArea />
+    <GetInTouch />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import AdvTrailer from "./components/AdvTrailer.vue";
 import ResultNumbers from "./components/ResultNumbers.vue";
 import BusinessArea from "./components/BusinessArea.vue";
 import TeamArea from "./components/TeamArea.vue";
+import GetInTouch from "./components/GetInTouch.vue";
 
 export default {
   name: "App",
@@ -28,6 +30,7 @@ export default {
     ResultNumbers,
     BusinessArea,
     TeamArea,
+    GetInTouch,
   },
 };
 </script>

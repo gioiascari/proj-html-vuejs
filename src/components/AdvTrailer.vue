@@ -3,17 +3,16 @@
     <!-- Text Adv -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <div class="text-adv w-75 text-center py-3">
-          <p>INTRODUCTION VIDEO</p>
+        <div class="text-adv text-center py-3">
+          <h6 class="font_color py-2"><strong>INTRODUCTION VIDEO</strong></h6>
 
           <h2>
-            <strong>Advisory <span>Performance</span></strong>
+            <strong>Advisory <span> Performance</span></strong>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, a
-            quis omnis maiores iusto repellendus totam labore officiis corporis
-            sapiente sit veniam dolorem error exercitationem dolor adipisci,
-            doloremque amet aliquam.
+            Financial executives nedd to review their strategies, operating
+            models and capabilities so their areas can generate sound
+            information for better decision making.
           </p>
         </div>
       </div>
@@ -21,7 +20,7 @@
     <!-- / Text Adv -->
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
-        <div class="img-adv w-75">
+        <div class="img-adv w-100">
           <img src="../assets/img/video-1.jpg" alt="ADV" class="w-100" />
         </div>
       </div>
@@ -36,6 +35,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.font_color {
+  color: #52babb;
+}
+span {
+  color: #098081;
+  background-color: #52b9bb30;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+}
 .p_5 {
   padding: 10%;
 }

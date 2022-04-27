@@ -31,11 +31,9 @@
           <div class="central-text w-50">
             <div class="title text-white">
               <h1><strong>Financial Risk</strong></h1>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptate tempore saepe minima unde veniam, earum eum hic nihil
-                quos fugit dolorum atque autem distinctio quam omnis cumque
-                quis. Temporibus, tempore.
+              <p class="text-muted">
+                The right outcomes depend on continuous rigor in
+                governance,models,and process across the finance function.
               </p>
             </div>
             <div class="btn-container d-flex gap-3 justify-content-center">
@@ -76,14 +74,15 @@ export default {
 
   h1 {
     font-size: 20px;
+    font-weight: 800;
   }
 }
 
 #logo span {
   font-size: 20px;
-  padding-left: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: $bg-btn;
   background-color: #52b9bb60;
   border-radius: 40px 0 0 40px;

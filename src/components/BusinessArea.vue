@@ -43,22 +43,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="col-4">
-          <div class="p-3 bg-dark rounded">Custom column padding</div>
-        </div>
-        <div class="col-4">
-          <div class="p-3 border bg-dark rounded">Custom column padding</div>
-        </div>
-        <div class="col-4">
-          <div class="p-3 border bg-dark rounded">Custom column padding</div>
-        </div>
-        <div class="col-4">
-          <div class="p-3 border bg-dark">Custom column padding</div>
-        </div>
-        <div class="col-4">
-          <div class="p-3 border bg-dark">Custom column padding</div>
-        </div> -->
       </div>
       <!-- /Grid BusinessArea -->
     </div>

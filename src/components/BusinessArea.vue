@@ -28,9 +28,9 @@
       </div>
       <!-- /BusinessArea top text -->
       <!-- Grid BusinessArea -->
-      <div class="row g-2">
+      <div class="row g-4">
         <div class="col-4" v-for="(item, i) in title" :key="i">
-          <div class="p-3 bg-dark rounded">
+          <div class="p-4 bg-dark rounded">
             <div class="icon d-flex justify-content-between">
               <!-- icona trovata ma non è uguale, devo cercarne un'altra, intanto mi salvo il nome -->
               <i class="bi bi-diagram-2 w-100"></i>

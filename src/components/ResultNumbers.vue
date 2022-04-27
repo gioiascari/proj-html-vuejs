@@ -36,22 +36,22 @@ export default {
   data() {
     return {
       results: [
-        {
-          id: "",
-          result: "128 Certification",
-        },
-        {
-          id: "",
-          result: "230 Employees",
-        },
-        {
-          id: "",
-          result: "517 Customers",
-        },
-        {
-          id: "",
-          result: "94 Countries Served",
-        },
+        // {
+        //   id: "",
+        //   result: "128 Certification",
+        // },
+        // {
+        //   id: "",
+        //   result: "230 Employees",
+        // },
+        // {
+        //   id: "",
+        //   result: "517 Customers",
+        // },
+        // {
+        //   id: "",
+        //   result: "94 Countries Served",
+        // },
       ],
     };
   },
@@ -66,7 +66,5 @@ export default {
   background-repeat: no-repeat;
   background-position: bottom;
   // filter: grayscale(100%) brightness(0.4);
-}
-.text-results {
 }
 </style>

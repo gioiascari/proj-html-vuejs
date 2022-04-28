@@ -65,7 +65,7 @@ export default {
         },
         {
           name: "Financial Advisory",
-          icon: "consulting.svg",
+          icon: "financial.svg",
           txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
@@ -75,12 +75,12 @@ export default {
         },
         {
           name: "Middle Marketing",
-          icon: "financial.svg",
+          icon: "middle.svg",
           txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
           name: "Legal Consulting",
-          icon: "middle.svg",
+          icon: "consulting.svg",
           txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
@@ -104,6 +104,12 @@ span {
 }
 img {
   height: 50px;
-  filter: invert(35%) hue-rotate(164deg) brightness(89%) contrast(96%);
+  color: $color-green;
+  filter: invert(35%) sepia(80%) saturate(4880%) hue-rotate(164deg)
+    brightness(89%) contrast(96%);
+}
+i {
+  color: $color-green;
+  font-size: 20px;
 }
 </style>

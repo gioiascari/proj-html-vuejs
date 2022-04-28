@@ -21,13 +21,7 @@
               <!-- Nome -->
               <div class="col-md-6">
                 <div class="form-group">
-                  <input
-                    id="form_name"
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Name"
-                  />
+                  <input name="name" class="form-control" placeholder="Name" />
                 </div>
               </div>
               <!-- /Nome -->
@@ -36,8 +30,6 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
-                    id="Email"
-                    type="text"
                     name="email"
                     class="form-control"
                     placeholder="Email"
@@ -51,8 +43,6 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
-                    id="form_phone"
-                    type="phone"
                     name="phone"
                     class="form-control"
                     placeholder="Phone"
@@ -65,8 +55,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <input
-                    id="form_info"
-                    type="info"
+                    value=""
                     name="info"
                     class="form-control"
                     placeholder="More Info"
@@ -81,9 +70,8 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <textarea
-                    id="form_message"
                     name="message"
-                    class="form-control"
+                    class="p-3 w-100"
                     placeholder="Message"
                   ></textarea>
                 </div>
@@ -131,12 +119,11 @@
               <p>hello@example.com</p>
             </div>
           </div>
-          <div class="info-contact d-flex font_color">
-            <b-icon-telephone-fill
-              style="color: #048383"
-              class="bg-opacity b-radius2"
-              font-scale="2"
-            ></b-icon-telephone-fill>
+          <div class="info-contact d-flex font_color align-items-center">
+            <div class="icon-data bg-opacity b-radius2 p-1">
+              <i class="bi bi-geo-alt-fill p_5" style="color: #048383"></i>
+            </div>
+
             <div class="text-contacts p-2 font_color2">
               <p>Main Avenue, 987</p>
             </div>
@@ -170,5 +157,13 @@ export default {
   p {
     margin: 0;
   }
+}
+.p_5 {
+  padding: 5px;
+}
+input,
+textarea {
+  background-color: $bg-input;
+  border: none;
 }
 </style>

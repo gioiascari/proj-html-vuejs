@@ -44,11 +44,8 @@
 
             <!-- Addres -->
             <div class="info-contact d-flex text_color align-items-center">
-              <b-icon-telephone-fill
-                style="color: #048383"
-                class="text-white"
-                font-scale="1"
-              ></b-icon-telephone-fill>
+              <i class="bi bi-geo-alt-fill" style="color: white"></i>
+
               <div class="text-contacts p-2 text_color">
                 <p>Main Avenue, 987</p>
               </div>
@@ -67,7 +64,9 @@
               <ul>
                 <div>
                   <li v-for="(service, j) in item.about" :key="j">
-                    <a href="#"> {{ service }}</a>
+                    <a href="#"
+                      ><i class="bi bi-chevron-right"></i> {{ service }}</a
+                    >
                   </li>
                 </div>
               </ul>
@@ -131,7 +130,9 @@ export default {
   margin: 0;
   padding: 0;
 }
-
+.p_5 {
+  padding: 5px;
+}
 .jumbotron {
   height: 500px;
   background-image: url("../assets/img/bg-7.jpg");

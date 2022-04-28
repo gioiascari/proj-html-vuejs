@@ -124,7 +124,7 @@
           </div>
 
           <!-- /Contatti -->
-          <button class="btn btn_hover1">View Map</button>
+          <button class="btn btn_hover">View Map</button>
         </div>
         <!-- /Data Agency -->
       </div>

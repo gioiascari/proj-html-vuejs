@@ -5,7 +5,7 @@
         <div class="col-2 col-sm-2 m-0">
           <!-- logo -->
           <div id="logo">
-            <h1><span>NEX</span>GEN</h1>
+            <img alt="Vue logo" src="../assets/img/nexgen-logo.svg" />
           </div>
           <!-- /logo -->
         </div>

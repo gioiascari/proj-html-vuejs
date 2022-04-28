@@ -33,11 +33,19 @@
           <div class="p-4 bg-dark rounded">
             <div class="icon d-flex justify-content-between">
               <!-- icona trovata ma non è uguale, devo cercarne un'altra, intanto mi salvo il nome -->
-              <i class="bi bi-diagram-2 w-100"></i>
-              <a href="#"> <i class="bi bi-arrow-right"></i></a>
+              <b-icon
+                :icon="icon"
+                v-for="(icon, j) in item.icon"
+                :key="j"
+              ></b-icon>
+              <!-- <a href="#"> <i class="bi bi-arrow-right"></i></a> -->
             </div>
 
             <div class="text">
+              <!-- Icone -->
+
+              <!--/ Icone -->
+
               <h1 class="fs-4">{{ item.argument }}</h1>
               <p>{{ item.lorem }}</p>
             </div>
@@ -56,26 +64,32 @@ export default {
     return {
       title: [
         {
+          icon: ["diagram2", "arrow-right"],
           argument: "Audit & Assurance",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
+          icon: ["briefcase", "arrow-right"],
           argument: "Financial Advisory",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
+          icon: ["bar-chart", "arrow-right"],
           argument: "Analytics and M&A",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
+          icon: ["diagram2"],
           argument: "Middle Marketing",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
+          icon: ["diagram2"],
           argument: "Legal Consulting",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
+          icon: ["diagram2"],
           argument: "Regular Risk",
           lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },

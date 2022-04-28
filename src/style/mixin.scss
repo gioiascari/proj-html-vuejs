@@ -8,8 +8,27 @@ $font-color: white;
 $bg-opacity: #52b9bb60;
 
 // ---------------------STYLE--------------------------------------
+
+//------------------FONT------------------------------------
 .font_color {
   color: #52babb;
+}
+.font_weight {
+  font-weight: 700;
+}
+.font_weight1 {
+  font-weight: 600;
+}
+.text_color {
+  color: #bcbdbd;
+}
+//------------------/ FONT------------------------------------
+//---------------- BG -----------------------------------------
+.bg-opacity {
+  background-color: #52b9bb60;
+  padding: 0px 10px 0px 10px;
+  color: #048383;
+  border-radius: 5px;
 }
 .bg_btn {
   background-color: $color-green;
@@ -22,12 +41,12 @@ $bg-opacity: #52b9bb60;
     color: white;
   }
 }
-.btn_hover1 {
-  background-color: $color-green;
-  color: white;
-  &:hover {
-    border-color: $color-green;
-    background-color: transparent;
-    color: black;
-  }
+
+//----------------/ BG -----------------------------------------
+.b-radius {
+  border-radius: 10px;
+}
+
+.b-radius2 {
+  border-radius: 50px;
 }

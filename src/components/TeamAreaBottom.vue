@@ -55,7 +55,7 @@
             <div class="text-absolute position_absolute w-75 text-center">
               <h3>{{ item.title }}</h3>
 
-              <p class="overlay_p">{{ item.txt }}</p>
+              <p class="overlay_p">{{ item.txt } }</p>
             </div>
           </div>
         </div>

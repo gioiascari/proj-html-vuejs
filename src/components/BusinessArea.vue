@@ -5,7 +5,10 @@
       <div class="row">
         <div class="col-12">
           <div class="text">
-            <p class="font_color">OUR BUSINESS AREAS</p>
+            <div class="font_color">
+              <p>OUR BUSINESS AREAS</p>
+            </div>
+
             <h1>
               <strong>Excellence in <span>Services</span></strong>
             </h1>
@@ -42,10 +45,6 @@
             </div>
 
             <div class="text">
-              <!-- Icone -->
-
-              <!--/ Icone -->
-
               <h1 class="fs-4">{{ item.argument }}</h1>
               <p>{{ item.lorem }}</p>
             </div>

@@ -31,14 +31,14 @@
           <div class="central-text w-50">
             <div class="title text-white">
               <h1><strong>Financial Risk</strong></h1>
-              <p class="text-muted">
+              <p class="text_color">
                 The right outcomes depend on continuous rigor in
                 governance,models,and process across the finance function.
               </p>
             </div>
             <div class="btn-container d-flex gap-3 justify-content-center">
               <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
-              <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
+              <button class="btn btn_hover" type="submit">READ MORE</button>
             </div>
           </div>
         </div>

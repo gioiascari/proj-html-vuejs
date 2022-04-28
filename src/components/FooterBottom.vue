@@ -3,12 +3,13 @@
     <div class="container-md text-white">
       <div class="row">
         <div class="col-12">
-          <div class="text-white py-3 d-flex justify-content-between">
+          <div class="text_color py-3 d-flex justify-content-between">
             <p class="m-0">
-              Enjoy the low price. We are tracking any intention of piracy
+              Enjoy the low price. We are tracking any intention of piracy.
             </p>
             <p class="m-0">
-              2020 NEXGEN is Proudly Powered by <span>Codings.</span>
+              <span class="copyright text_color">&copy;</span> 2020 NEXGEN is
+              Proudly Powered by <span>Codings.</span>
             </p>
           </div>
         </div>
@@ -23,4 +24,9 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "@/style/mixin";
+span {
+  color: $bg-btn;
+}
+</style>

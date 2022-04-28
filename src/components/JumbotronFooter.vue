@@ -3,7 +3,7 @@
     <div class="container-md p-4">
       <div class="row g-4 py-5 align-items-center">
         <!-- Colonna Logo e icone -->
-        <div class="col-3 col-sm-6 col-md-3">
+        <div class="col-3 col-md-3">
           <div class="p-4">
             <div class="logo w-75">
               <img
@@ -60,60 +60,21 @@
         <!-- /Colonna Logo e icone -->
 
         <!-- About col -->
-        <div class="col-3 col-sm-6 col-md-3">
-          <div class="p-4 bg-dark rounded">
+        <div class="col-3 col-md-3" v-for="(item, i) in infoLink" :key="i">
+          <div class="p-4 bg_dark rounded">
             <div class="text-white">
-              <h1 class="fs-4">About</h1>
+              <h1 class="fs-4">{{ item.title }}</h1>
               <ul>
-                <li><a href="#"> The Company</a></li>
-                <li><a href="#"> Insitutional</a></li>
-                <li><a href="#"> Social Events</a></li>
-                <li><a href="#"> Innovation</a></li>
-                <li><a href="#"> Environment</a></li>
-                <li><a href="#"> Technology</a></li>
+                <div>
+                  <li v-for="(service, j) in item.about" :key="j">
+                    <a href="#"> {{ service }}</a>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
         </div>
         <!-- /About col -->
-
-        <!-- Services col -->
-
-        <div class="col-3 col-sm-6 col-md-3">
-          <div class="p-4 bg-dark rounded">
-            <div class="text-white">
-              <h1 class="fs-4">Services</h1>
-              <ul>
-                <li><a href="#"> Audit Assurance</a></li>
-                <li><a href="#"> Financial Advisory</a></li>
-                <li><a href="#"> Analytics MA</a></li>
-                <li><a href="#"> Middle MArketing</a></li>
-                <li><a href="#"> Legal Consulting</a></li>
-                <li><a href="#"> Regularity Risk</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /Services col -->
-
-        <!-- Support col -->
-
-        <div class="col-3 col-sm-6 col-md-3">
-          <div class="p-4 bg-dark rounded">
-            <div class="text-white">
-              <h1 class="fs-4">Support</h1>
-              <ul>
-                <li><a href="#"> Responsability</a></li>
-                <li><a href="#"> Terms of Use</a></li>
-                <li><a href="#"> About Cookies</a></li>
-                <li><a href="#"> Privacy Policy</a></li>
-                <li><a href="#"> Accessibility</a></li>
-                <li><a href="#"> Information</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /Support col -->
       </div>
     </div>
   </div>
@@ -127,7 +88,36 @@ export default {
       infoLink: [
         {
           title: "About",
-          link1: "",
+          about: [
+            "The Company",
+            "Insitutional",
+            "Social & Events",
+            "Innovation",
+            "Environment",
+            "Technology",
+          ],
+        },
+        {
+          title: "Services",
+          about: [
+            "Audit & Assurance",
+            "Financial Advisory",
+            "Middle MArketing",
+            "Innovation",
+            "Legal Consulting",
+            "Regularity Risk",
+          ],
+        },
+        {
+          title: "Support",
+          about: [
+            "Responsability",
+            "Terms of Use",
+            "About Cookies",
+            "Privacy Policy",
+            "Accessibility",
+            "Information",
+          ],
         },
       ],
     };
@@ -175,5 +165,11 @@ ul {
     color: #bcbdbd;
     text-decoration: none;
   }
+}
+
+.bg_dark {
+  background-color: $bg-card-footer;
+  background-blend-mode: multiply;
+  background-color: rgba(59, 59, 59, 0.3);
 }
 </style>

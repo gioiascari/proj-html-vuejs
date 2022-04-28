@@ -31,12 +31,12 @@
               :key="i"
             >
               <div class="row">
-                <div class="col-5">
-                  <div>
+                <div class="col-sm-6 col-md-6 col-6">
+                  <div class="w-100">
                     <img
                       :src="require(`@/assets/img/${item.image}`)"
                       alt="item"
-                      class="w-100 b-radius"
+                      class="w-100 img-fluid b-radius"
                     />
                   </div>
                 </div>
@@ -65,24 +65,27 @@
 
           <!-- /Griglia Team -->
         </div>
-        <div class="col-4 bg_btn text-white b-radius">
+        <div class="col-4 col-sm-4 col-md-4 bg_btn text-white b-radius">
           <div class="text-president p_20">
             <h1 class="fs-4">President Speech</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              harum vitae beatae sed esse tempore ullam, aliquam delectus modi
-              excepturi optio nostrum quia qui ab animi magnam aut labore et.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              harum vitae beatae sed esse tempore ullam, aliquam delectus modi
-              excepturi optio nostrum quia qui ab animi magnam aut labore et.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
-              harum vitae beatae sed esse tempore ullam, aliquam delectus modi
-              excepturi optio nostrum quia qui ab animi magnam aut labore et.
-            </p>
+            <div class="fs_6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                harum vitae beatae sed esse tempore ullam, aliquam delectus modi
+                excepturi optio nostrum quia qui ab animi magnam aut labore et.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                harum vitae beatae sed esse tempore ullam, aliquam delectus modi
+                excepturi optio nostrum quia qui ab animi magnam aut labore et.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                harum vitae beatae sed esse tempore ullam, aliquam delectus modi
+                excepturi optio nostrum quia qui ab animi magnam aut labore et.
+              </p>
+            </div>
+
             <h4>T.Johnson</h4>
           </div>
         </div>
@@ -134,5 +137,8 @@ export default {
 <style scoped lang="scss">
 .p_20 {
   padding: 20px;
+}
+.fs_6 {
+  font-size: 14px;
 }
 </style>

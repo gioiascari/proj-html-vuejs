@@ -3,7 +3,7 @@
     <div class="container-md p-4">
       <div class="row g-4 py-5 align-items-center">
         <!-- Colonna Logo e icone -->
-        <div class="col-3">
+        <div class="col-3 col-sm-6 col-md-3">
           <div class="p-4">
             <div class="logo w-75">
               <img
@@ -60,7 +60,7 @@
         <!-- /Colonna Logo e icone -->
 
         <!-- About col -->
-        <div class="col-3">
+        <div class="col-3 col-sm-6 col-md-3">
           <div class="p-4 bg-dark rounded">
             <div class="text-white">
               <h1 class="fs-4">About</h1>
@@ -79,7 +79,7 @@
 
         <!-- Services col -->
 
-        <div class="col-3">
+        <div class="col-3 col-sm-6 col-md-3">
           <div class="p-4 bg-dark rounded">
             <div class="text-white">
               <h1 class="fs-4">Services</h1>
@@ -98,7 +98,7 @@
 
         <!-- Support col -->
 
-        <div class="col-3">
+        <div class="col-3 col-sm-6 col-md-3">
           <div class="p-4 bg-dark rounded">
             <div class="text-white">
               <h1 class="fs-4">Support</h1>

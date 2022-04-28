@@ -29,4 +29,8 @@ export default {
 span {
   color: $bg-btn;
 }
+.copyright,
+span {
+  background-color: transparent;
+}
 </style>

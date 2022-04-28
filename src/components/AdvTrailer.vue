@@ -21,7 +21,25 @@
     <div class="row">
       <div class="col-12 d-flex justify-content-center">
         <div class="img-adv w-100">
-          <img src="../assets/img/video-1.jpg" alt="ADV" class="w-100" />
+          <img
+            src="../assets/img/video-1.jpg"
+            alt="ADV"
+            class="w-100 position-relative"
+          />
+          <div class="icon-play">
+            <b-icon
+              class="position_absolute"
+              icon="play-fill"
+              font-scale="7.5"
+              variant="success"
+            ></b-icon>
+            <b-icon
+              icon="play-fill"
+              font-scale="7.5"
+              variant="white"
+              class="position_absolute1"
+            ></b-icon>
+          </div>
         </div>
       </div>
     </div>
@@ -46,5 +64,17 @@ span {
 }
 .p_5 {
   padding: 10%;
+}
+.position_absolute {
+  position: absolute;
+  top: 70.5rem;
+  left: 47%;
+  opacity: 0.6;
+}
+.position_absolute1 {
+  position: absolute;
+  top: 71rem;
+  left: 47%;
+  opacity: 0.7;
 }
 </style>

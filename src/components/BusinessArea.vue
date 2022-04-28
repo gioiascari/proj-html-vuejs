@@ -25,7 +25,7 @@
         </div>
         <!-- button -->
         <div class="col-2 d-flex align-items-center justify-content-end">
-          <button type="button" class="btn btn_hover">SEE ALL</button>
+          <button type="button" class="btn btn_hover">SEE MORE</button>
         </div>
         <!-- /button -->
       </div>
@@ -34,19 +34,14 @@
       <div class="row g-2">
         <div class="col-4" v-for="(item, i) in title" :key="i">
           <div class="p-4 bg-dark rounded">
-            <div class="icon d-flex justify-content-between">
-              <!-- icona trovata ma non è uguale, devo cercarne un'altra, intanto mi salvo il nome -->
-              <b-icon
-                :icon="icon"
-                v-for="(icon, j) in item.icon"
-                :key="j"
-              ></b-icon>
-              <!-- <a href="#"> <i class="bi bi-arrow-right"></i></a> -->
+            <div class="icon d-flex justify-content-between py-3">
+              <img :src="require(`../assets/img/${item.icon}`)" alt="" />
+              <i class="bi bi-arrow-right"></i>
             </div>
 
             <div class="text">
-              <h1 class="fs-4">{{ item.argument }}</h1>
-              <p>{{ item.lorem }}</p>
+              <h1 class="fs-4">{{ item.name }}</h1>
+              <p>{{ item.txt }}</p>
             </div>
           </div>
         </div>
@@ -59,38 +54,39 @@
 <script>
 export default {
   name: "BusinessArea",
+  props: ["icons"],
   data() {
     return {
       title: [
         {
-          icon: ["diagram2", "arrow-right"],
-          argument: "Audit & Assurance",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Audit & Assurance",
+          icon: "audit.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
-          icon: ["briefcase", "arrow-right"],
-          argument: "Financial Advisory",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Financial Advisory",
+          icon: "consulting.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
-          icon: ["bar-chart", "arrow-right"],
-          argument: "Analytics and M&A",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Analytics and M&A",
+          icon: "analytics.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
-          icon: ["diagram2"],
-          argument: "Middle Marketing",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Middle Marketing",
+          icon: "financial.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
-          icon: ["diagram2"],
-          argument: "Legal Consulting",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Legal Consulting",
+          icon: "middle.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
         {
-          icon: ["diagram2"],
-          argument: "Regular Risk",
-          lorem: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          name: "Regular Risk",
+          icon: "risk.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
       ],
     };
@@ -105,5 +101,9 @@ span {
   background-color: $bg-opacity;
   padding: 0px 10px 0px 10px;
   border-radius: 5px;
+}
+img {
+  height: 50px;
+  filter: invert(35%) hue-rotate(164deg) brightness(89%) contrast(96%);
 }
 </style>

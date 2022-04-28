@@ -21,7 +21,8 @@
                 world.
               </p>
             </div>
-            <button class="btn btn_hover">SEE</button>
+
+            <button class="btn btn_hover">SEE ALL</button>
           </div>
         </div>
       </div>

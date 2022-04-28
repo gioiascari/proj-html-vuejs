@@ -31,12 +31,16 @@
       </div>
       <!-- /BusinessArea top text -->
       <!-- Grid BusinessArea -->
-      <div class="row g-2">
-        <div class="col-4" v-for="(item, i) in title" :key="i">
+      <div class="row g-4">
+        <div class="col-4 overlay_g" v-for="(item, i) in title" :key="i">
           <div class="p-4 bg-dark rounded">
-            <div class="icon d-flex justify-content-between py-3">
+            <div
+              class="icon py-2 d-flex justify-content-between align-items-center"
+            >
               <img :src="require(`../assets/img/${item.icon}`)" alt="" />
-              <i class="bi bi-arrow-right"></i>
+              <div class="icon-g">
+                <i class="bi bi-arrow-right p-2"></i>
+              </div>
             </div>
 
             <div class="text">
@@ -99,12 +103,25 @@ export default {
 
 img {
   height: 50px;
-  color: $color-green;
   filter: invert(35%) sepia(80%) saturate(4880%) hue-rotate(164deg)
     brightness(89%) contrast(96%);
 }
 i {
   color: $color-green;
   font-size: 20px;
+}
+.overlay_g:hover img {
+  filter: brightness(0) invert(1);
+}
+.overlay_g:hover i {
+  color: white;
+  background-color: $color-green;
+  border-radius: 50%;
+}
+.overlay_g:hover {
+  transform: translateY(-10px);
+}
+.overlay_g {
+  transition: transform 0.5s ease-in;
 }
 </style>

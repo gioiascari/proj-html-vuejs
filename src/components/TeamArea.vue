@@ -57,7 +57,7 @@
                         v-for="(icon, j) in item.icon"
                         :key="j"
                         style="color: #048383"
-                        class="bg-opacity b-radius2"
+                        class="bg-opacity b-radius2 me-2"
                         font-scale="3"
                       ></b-icon>
                     </div>

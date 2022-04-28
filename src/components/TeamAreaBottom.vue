@@ -53,8 +53,6 @@ export default {
   name: "TeamAreaBottom.vue",
   data() {
     return {
-      showMore: 3,
-      isShow: false,
       news: [
         {
           image: "news-1.jpg",
@@ -62,18 +60,6 @@ export default {
         },
         {
           image: "news-2.jpg",
-          txt: "Because market research is part of the business plan",
-        },
-        {
-          image: "news-3.jpg",
-          txt: "Working from home is now a trend",
-        },
-        {
-          image: "news-4.jpg",
-          txt: "Increasing creativity is possible for everyone",
-        },
-        {
-          image: "news-5.jpg",
           txt: "Because market research is part of the business plan",
         },
         {

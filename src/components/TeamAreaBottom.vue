@@ -28,7 +28,7 @@
       </div>
       <div class="row g-3">
         <div
-          class="col-4 align-items-center"
+          class="col-4 align-items-center overlay_g"
           v-for="(item, i) in news"
           :key="i"
         >
@@ -38,8 +38,24 @@
               alt="item"
               class="w-100 rounded"
             />
+            <div class="position_absolute-top">
+              <div
+                class="info-persons overlay_p gap-3 justify-content-around d-flex align-items-center"
+              >
+                <div class="left_g gap-2 d-flex align-items-center">
+                  <i class="bi bi-person"></i>
+                  <p>{{ item.nameP }}</p>
+                </div>
+                <div class="right_g gap-2 d-flex align-items-center">
+                  <b-icon icon="clock"></b-icon>
+                  <p>{{ item.day }}</p>
+                </div>
+              </div>
+            </div>
             <div class="text-absolute position_absolute w-75 text-center">
-              <p>{{ item.txt }}</p>
+              <h3>{{ item.title }}</h3>
+
+              <p class="overlay_p">{{ item.txt }}</p>
             </div>
           </div>
         </div>
@@ -56,15 +72,24 @@ export default {
       news: [
         {
           image: "news-1.jpg",
-          txt: "Increasing creativity is possible for everyone",
+          title: "Increasing creativity is possible for everyone.",
+          txt: " Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          nameP: "Gioia Ascari",
+          day: "3 Days Ago",
         },
         {
           image: "news-2.jpg",
-          txt: "Because market research is part of the business plan",
+          title: "Because market research is part of the business plan.",
+          txt: " Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          nameP: "Steven Spielberg",
+          day: "8 Days Ago",
         },
         {
           image: "news-3.jpg",
-          txt: "Working from home is now a trend",
+          title: "Working from home is now a trend.",
+          txt: " Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+          nameP: "Allan Poe",
+          day: "10 Days Ago",
         },
       ],
     };
@@ -82,5 +107,24 @@ export default {
   position: absolute;
   bottom: 10%;
   left: 10%;
+}
+.overlay_g:hover img {
+  filter: blur(3px) brightness(50%);
+}
+.overlay_g:hover .overlay_p {
+  visibility: visible;
+}
+.position_absolute-top {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+}
+.left_g > p,
+.right_g > p {
+  margin: 0 !important;
+}
+.overlay_p {
+  visibility: hidden;
 }
 </style>

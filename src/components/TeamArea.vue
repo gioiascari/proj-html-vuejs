@@ -3,7 +3,7 @@
     <div class="container-md p_gioia">
       <!-- Paragrafetto iniziale -->
       <div class="row">
-        <div class="col-12 font_color">
+        <div class="col-12">
           <h6 class="font_color py-2"><strong>WE LIKE WHAT WE DO</strong></h6>
         </div>
       </div>
@@ -36,7 +36,7 @@
                     <img
                       :src="require(`@/assets/img/${item.image}`)"
                       alt="item"
-                      class="w-100"
+                      class="w-100 b-radius"
                     />
                   </div>
                 </div>
@@ -132,9 +132,6 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.p_gioia {
-  padding: 100px 0px 100px 0px;
-}
 .p_20 {
   padding: 20px;
 }

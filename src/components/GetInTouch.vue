@@ -3,7 +3,7 @@
     <GetInTouchTop />
     <div class="container-md py-5">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 font_color font_weight1">
           <p>SEND A MESSAGE</p>
         </div>
       </div>
@@ -11,13 +11,13 @@
         <div class="col-8">
           <div class="text-team">
             <h1>
-              <strong> Get in <span>Touch</span> </strong>
+              <strong> Get in <span class="bg-opacity">Touch</span> </strong>
             </h1>
             <p>We will respond to your message as soon as possible.</p>
           </div>
           <!-- Input Messaggi -->
           <div class="controls">
-            <div class="row">
+            <div class="row my-2">
               <!-- Nome -->
               <div class="col-md-6">
                 <div class="form-group">
@@ -46,7 +46,7 @@
               </div>
               <!-- /Email -->
             </div>
-            <div class="row">
+            <div class="row my-2">
               <!-- Telefono -->
               <div class="col-md-6">
                 <div class="form-group">
@@ -75,7 +75,7 @@
               </div>
               <!--/ Info -->
             </div>
-            <div class="row">
+            <div class="row my-2">
               <!-- Messaggio -->
 
               <div class="col-md-12">
@@ -92,8 +92,8 @@
               <!-- /Messaggio -->
 
               <!-- BTN -->
-              <div class="col-md-12">
-                <button class="btn btn_hover">SEND</button>
+              <div class="col-md-12 my-2">
+                <button class="btn btn_hover1">SEND</button>
               </div>
               <!-- / BTN -->
             </div>
@@ -104,27 +104,46 @@
         <!-- Data Agency -->
         <div class="col-4">
           <div class="text-president">
-            <h1>Example Inc.</h1>
+            <h1><strong> Example Inc.</strong></h1>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
 
           <!-- Contatti -->
-          <div class="info-contact d-flex">
-            <b-icon-telephone-fill></b-icon-telephone-fill>
-            <p>+1(305) 1234-5678</p>
+          <div class="info-contact d-flex font_color align-items-center">
+            <b-icon-telephone-fill
+              style="color: #048383"
+              class="bg-opacity b-radius2"
+              font-scale="2"
+            ></b-icon-telephone-fill>
+            <div class="text-contacts p-2 font_color2">
+              <p>+1(305) 1234-5678</p>
+            </div>
           </div>
           <div class="info-contact d-flex">
-            <b-icon-envelope-fill></b-icon-envelope-fill>4
-            <p>+1(305) 1234-5678</p>
+            <b-icon-envelope-fill
+              style="color: #048383"
+              class="bg-opacity b-radius2 font_color"
+              font-scale="2"
+            ></b-icon-envelope-fill>
+            <div class="text-contacts p-2 font_color2">
+              <p>hello@example.com</p>
+            </div>
           </div>
-          <div class="info-contact d-flex">
-            <b-icon-telephone-fill></b-icon-telephone-fill>
-            <p>+1(305) 1234-5678</p>
+          <div class="info-contact d-flex font_color">
+            <b-icon-telephone-fill
+              style="color: #048383"
+              class="bg-opacity b-radius2"
+              font-scale="2"
+            ></b-icon-telephone-fill>
+            <div class="text-contacts p-2 font_color2">
+              <p>Main Avenue, 987</p>
+            </div>
           </div>
 
           <!-- /Contatti -->
-          <button class="btn btn_hover">View Map</button>
+          <button class="btn btn_hover1">VIEW MAP</button>
         </div>
         <!-- /Data Agency -->
       </div>
@@ -146,5 +165,10 @@ export default {
 @import "@/style/mixin";
 .btn_hover {
   color: black;
+}
+.info-contact {
+  p {
+    margin: 0;
+  }
 }
 </style>

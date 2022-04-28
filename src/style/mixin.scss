@@ -13,6 +13,9 @@ $bg-opacity: #52b9bb60;
 .font_color {
   color: #52babb;
 }
+.font_color2 {
+  color: $btn-dark-green;
+}
 .font_weight {
   font-weight: 700;
 }
@@ -33,9 +36,20 @@ $bg-opacity: #52b9bb60;
 .bg_btn {
   background-color: $color-green;
 }
+.bg-container {
+  background-color: $bg-news;
+}
 .btn_hover {
   border-color: $color-green;
   color: white;
+  &:hover {
+    background-color: $color-green;
+    color: white;
+  }
+}
+.btn_hover1 {
+  border-color: $color-green;
+  color: $color-green;
   &:hover {
     background-color: $color-green;
     color: white;
@@ -49,4 +63,7 @@ $bg-opacity: #52b9bb60;
 
 .b-radius2 {
   border-radius: 50px;
+}
+.p_gioia {
+  padding: 100px 0px 100px 0px;
 }

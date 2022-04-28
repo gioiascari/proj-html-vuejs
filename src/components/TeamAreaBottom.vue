@@ -1,11 +1,14 @@
 <template>
   <div class="bg-container">
-    <div class="container-md p-4">
+    <div class="container-md p_gioia">
       <div class="row">
         <div class="col-12">
-          <p>OUR EDITORIAL CONTENT</p>
+          <h6 class="font_color py-2">
+            <strong>OUR EDITORIAL CONTENT</strong>
+          </h6>
+
           <h1>
-            <strong>Latest<span> News</span> </strong>
+            <strong>Latest <span class="bg-opacity"> News</span> </strong>
           </h1>
         </div>
         <div class="row">
@@ -18,23 +21,25 @@
                 world.
               </p>
             </div>
-            <button class="btn btn_hover">SEE ALL</button>
+            <button class="btn btn_hover">SEE</button>
           </div>
         </div>
       </div>
-      <div class="row g-4">
+      <div class="row g-3">
         <div
           class="col-4 align-items-center"
           v-for="(item, i) in news"
           :key="i"
         >
-          <div class="p-4 rounded position-relative text-white">
+          <div class="rounded position-relative text-white">
             <img
               :src="require(`@/assets/img/${item.image}`)"
               alt="item"
               class="w-100 rounded"
             />
-            <p class="position-absolute fixed_bottom">{{ item.txt }}</p>
+            <div class="text-absolute position_absolute w-75 text-center">
+              <p>{{ item.txt }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -47,6 +52,8 @@ export default {
   name: "TeamAreaBottom.vue",
   data() {
     return {
+      showMore: 3,
+      isShow: false,
       news: [
         {
           image: "news-1.jpg",
@@ -54,6 +61,18 @@ export default {
         },
         {
           image: "news-2.jpg",
+          txt: "Because market research is part of the business plan",
+        },
+        {
+          image: "news-3.jpg",
+          txt: "Working from home is now a trend",
+        },
+        {
+          image: "news-4.jpg",
+          txt: "Increasing creativity is possible for everyone",
+        },
+        {
+          image: "news-5.jpg",
           txt: "Because market research is part of the business plan",
         },
         {
@@ -69,16 +88,12 @@ export default {
 <style scoped lang="scss">
 @import "@/style/mixin";
 
-.bg-container {
-  background-color: $bg-news;
-}
 .btn_hover {
   color: black;
 }
-.fixed_bottom {
-  bottom: 50px;
-  left: 90px;
-  width: 50%;
-  text-align: center;
+.position_absolute {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
 }
 </style>

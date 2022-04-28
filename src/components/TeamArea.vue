@@ -8,23 +8,25 @@
         </div>
       </div>
       <!-- /Paragrafetto iniziale -->
-      <div class="row">
+      <div class="row py-3">
         <div class="col-8">
           <!-- Titolo e paragrafo di 'Team Experts' -->
           <div class="text-team">
             <h1>
               <strong><span class="bg-opacity">Team</span> of Experts</strong>
             </h1>
-            <p>
-              Ethics and integrity are the bases on which our professionals
-              build their careers. They are fundamentals that become daily
-              attitudes.
-            </p>
+            <div class="text-p py-3">
+              <p>
+                Ethics and integrity are the bases on which our professionals
+                build their careers. They are fundamentals that become daily
+                attitudes.
+              </p>
+            </div>
           </div>
           <!-- /Titolo e paragrafo di 'Team Experts' -->
           <!-- Griglia Team -->
 
-          <div class="row g-2">
+          <div class="row g-2 py-4">
             <div
               class="col-sm-6 col-md-6 col-6"
               v-for="(item, i) in teams"
@@ -42,7 +44,9 @@
                 </div>
 
                 <div class="col-sm-6 col-md-6 col-6 d-flex">
-                  <div class="text-teams d-flex flex-column">
+                  <div
+                    class="text-teams d-flex flex-column justify-content-evenly"
+                  >
                     <h1 class="fs-4 font_weight">{{ item.namePerson }}</h1>
                     <p class="font_size text_color font_weight1">
                       {{ item.job }}
@@ -65,10 +69,12 @@
 
           <!-- /Griglia Team -->
         </div>
-        <div class="col-4 col-sm-4 col-md-4 bg_btn text-white b-radius">
+        <div
+          class="col-4 col-sm-4 col-md-4 bg_btn text-white b-radius d-flex align-items-center"
+        >
           <div class="text-president p_20">
-            <h1 class="fs-4">President Speech</h1>
-            <div class="fs_6">
+            <h1 class="fs-2">President Speech</h1>
+            <div class="fs_4">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
                 harum vitae beatae sed esse tempore ullam, aliquam delectus modi
@@ -85,8 +91,12 @@
                 excepturi optio nostrum quia qui ab animi magnam aut labore et.
               </p>
             </div>
-
-            <h4>T.Johnson</h4>
+            <div
+              class="author d-flex justify-content-between align-items-center"
+            >
+              <h4>T.Johnson</h4>
+              <i class="bi bi-quote fs-1" style="color: #004d4d"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -140,5 +150,13 @@ export default {
 }
 .fs_6 {
   font-size: 14px;
+}
+.mx_2 {
+  margin-right: 10px;
+}
+
+.bi-quote::before {
+  content: "\f6b0";
+  transform: rotate(539deg);
 }
 </style>

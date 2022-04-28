@@ -8,6 +8,7 @@ $font-color: white;
 $bg-card-footer: #4e4f52;
 $bg-opacity: #52b9bb60;
 $bg-input: #f1f1f1;
+$bg-input-dark: #2c2c2c;
 
 // ---------------------STYLE--------------------------------------
 
@@ -57,7 +58,10 @@ $bg-input: #f1f1f1;
     color: white;
   }
 }
-
+.dark-i {
+  background-color: $bg-input-dark;
+  border: none;
+}
 //----------------/ BG -----------------------------------------
 .b-radius {
   border-radius: 10px;
@@ -68,4 +72,9 @@ $bg-input: #f1f1f1;
 }
 .p_gioia {
   padding: 100px 0px 100px 0px;
+}
+span {
+  background-color: $bg-opacity;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
 }

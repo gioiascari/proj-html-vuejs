@@ -97,11 +97,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/style/mixin";
 
-span {
-  background-color: $bg-opacity;
-  padding: 0px 10px 0px 10px;
-  border-radius: 5px;
-}
 img {
   height: 50px;
   color: $color-green;

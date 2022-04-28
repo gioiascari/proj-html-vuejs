@@ -7,7 +7,7 @@
             <div class="col-12">
               <p>NEWSLETTER</p>
               <h1>
-                <strong>Know<span> First</span> </strong>
+                <strong><span> First</span> Know</strong>
               </h1>
             </div>
             <div class="row">
@@ -31,14 +31,14 @@
               <div class="col py-3">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control dark-i"
                   placeholder="First name"
                 />
               </div>
               <div class="col">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control dark-i"
                   placeholder="Last name"
                 />
               </div>

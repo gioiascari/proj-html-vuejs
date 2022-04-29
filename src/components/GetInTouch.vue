@@ -99,40 +99,29 @@
           </div>
 
           <!-- Contatti -->
-          <div class="info-contact d-flex font_color align-items-center">
-            <b-icon-telephone-fill
-              style="color: #048383"
-              class="bg-opacity b-radius2"
-              font-scale="2"
-            ></b-icon-telephone-fill>
-            <div class="text-contacts p-2 font_color2">
-              <p>+1(305) 1234-5678</p>
-            </div>
-          </div>
-          <div class="info-contact d-flex">
-            <b-icon-envelope-fill
-              style="color: #048383"
-              class="bg-opacity b-radius2 font_color"
-              font-scale="2"
-            ></b-icon-envelope-fill>
-            <div class="text-contacts p-2 font_color2">
-              <p>hello@example.com</p>
-            </div>
+          <div
+            class="info-contact d-flex font_color align-content-start align-items-center"
+          >
+            <ul>
+              <li
+                class="p-2 font_color"
+                v-for="(contact, i) in contacts"
+                :key="i"
+              >
+                <i
+                  :class="contact.icon"
+                  class="font_color bg-opacity b-radius1"
+                ></i>
+                {{ contact.info }}
+              </li>
+            </ul>
           </div>
           <div class="info-contact d-flex font_color align-items-center">
-            <div class="icon-data bg-opacity b-radius2 p-1">
-              <i class="bi bi-geo-alt-fill p_5" style="color: #048383"></i>
-            </div>
-
-            <div class="text-contacts p-2 font_color2">
-              <p>Main Avenue, 987</p>
-            </div>
+            <!-- /Contatti -->
+            <button class="btn btn_hover1">VIEW MAP</button>
           </div>
-
-          <!-- /Contatti -->
-          <button class="btn btn_hover1">VIEW MAP</button>
+          <!-- /Data Agency -->
         </div>
-        <!-- /Data Agency -->
       </div>
     </div>
   </div>
@@ -145,11 +134,16 @@ export default {
   components: {
     GetInTouchTop,
   },
+  props: ["contacts"],
 };
 </script>
 
 <style scoped lang="scss">
 @import "@/style/mixin";
+ul {
+  list-style: none;
+  padding: 0;
+}
 .btn_hover {
   color: black;
 }

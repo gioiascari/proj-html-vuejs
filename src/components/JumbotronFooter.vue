@@ -18,39 +18,18 @@
             </div>
             <!-- Phone -->
             <div class="info-contact d-flex font_color align-items-center">
-              <b-icon-telephone-fill
-                style="color: #048383"
-                class="text-white"
-                font-scale="1"
-              ></b-icon-telephone-fill>
-              <div class="text-contacts p-2 text_color">
-                <p>+1(305) 1234-5678</p>
-              </div>
+              <ul>
+                <li
+                  class="p-2 text_color"
+                  v-for="(contact, i) in contacts"
+                  :key="i"
+                >
+                  <i :class="contact.icon"></i>
+                  {{ contact.info }}
+                </li>
+              </ul>
             </div>
-            <!-- / PHone -->
 
-            <!-- Mail -->
-            <div class="info-contact d-flex align-items-center">
-              <b-icon-envelope-fill
-                style="color: #048383"
-                class="text-white"
-                font-scale="1"
-              ></b-icon-envelope-fill>
-              <div class="text-contacts p-2 text_color">
-                <p>hello@example.com</p>
-              </div>
-            </div>
-            <!-- / Mail -->
-
-            <!-- Addres -->
-            <div class="info-contact d-flex text_color align-items-center">
-              <i class="bi bi-geo-alt-fill" style="color: white"></i>
-
-              <div class="text-contacts p-2 text_color">
-                <p>Main Avenue, 987</p>
-              </div>
-            </div>
-            <!-- / Addres -->
             <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
           </div>
         </div>
@@ -82,6 +61,7 @@
 <script>
 export default {
   name: "JumbotronFooter",
+  props: ["contacts"],
   data() {
     return {
       infoLink: [

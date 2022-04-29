@@ -2,14 +2,14 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <TopHeader />
-    <JumbotronHeader />
+    <TopHeader :contacts="contacts" />
+    <JumbotronHeader :nav="nav" />
     <AdvTrailer />
     <ResultNumbers />
     <BusinessArea />
     <TeamArea />
-    <GetInTouch />
-    <JumbotronFooter />
+    <GetInTouch :contacts="contacts" />
+    <JumbotronFooter :contacts="contacts" />
     <FooterBottom />
   </div>
 </template>
@@ -37,6 +37,28 @@ export default {
     GetInTouch,
     JumbotronFooter,
     FooterBottom,
+  },
+  data() {
+    return {
+      nav: ["HOME", "ABOUT", "SERVICE", "TEAM", "BLOG"],
+      contacts: [
+        {
+          type: "phone",
+          info: "+1 (305) 1234-5678",
+          icon: "bi bi-telephone-fill",
+        },
+        {
+          type: "email",
+          info: "hello@example.com",
+          icon: "bi bi-envelope-fill",
+        },
+        {
+          type: "position",
+          info: "Main Avenue, 987",
+          icon: "bi bi-geo-alt-fill",
+        },
+      ],
+    };
   },
 };
 </script>

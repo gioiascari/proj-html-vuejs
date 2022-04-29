@@ -13,11 +13,13 @@
           <!-- NavBar -->
           <nav class="text-white d-flex justify-content-end">
             <ul
-              v-for="(nav, i) in navBar"
+              v-for="(navBar, i) in nav"
               :key="i"
               class="m-0 d-flex align-items-center p-2"
             >
-              <li>{{ nav }}</li>
+              <li>
+                <a href="#"> {{ navBar }}</a>
+              </li>
             </ul>
             <i class="bi bi-person d-flex p-2"></i>
             <button class="btn btn_hover" type="submit">GET IN TOUCH</button>
@@ -51,11 +53,12 @@
 <script>
 export default {
   name: "JumbotronHeader",
-  data() {
-    return {
-      navBar: ["HOME", "ABOUT", "SERVICES", "TEAM", "BLOG"],
-    };
-  },
+  props: ["nav"],
+  // data() {
+  //   return {
+  //     navBar: ["HOME", "ABOUT", "SERVICES", "TEAM", "BLOG"],
+  //   };
+  // },
 };
 </script>
 

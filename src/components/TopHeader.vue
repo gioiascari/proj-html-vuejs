@@ -14,15 +14,13 @@
           <!-- Open Hours -->
           <div class="telephone">
             <ul class="list-group d-flex flex-row">
-              <li class="p-2">
-                <a href="#" class="text_color"
-                  ><i class="bi bi-telephone-fill"></i> +1(305)1234-5678</a
-                >
-              </li>
-              <li class="p-2">
-                <a href="#" class="text_color"
-                  ><i class="bi bi-envelope-fill"></i> hello@example.com</a
-                >
+              <li
+                class="p-2 text_color"
+                v-for="(contact, i) in contacts"
+                :key="i"
+              >
+                <i :class="contact.icon"></i>
+                {{ contact.info }}
               </li>
 
               <li class="p-2 text_color"><i class="bi bi-facebook"></i></li>
@@ -31,12 +29,6 @@
             </ul>
           </div>
         </div>
-        <!-- <div
-          class="col-sm-4 col-md-6 col-ml-8 d-flex align-items-center justify-content-end"
-        > -->
-        <!-- Telephone number/mail/social info -->
-
-        <!-- /Telephone number/mail/social info -->
       </div>
     </div>
   </div>
@@ -45,6 +37,7 @@
 <script>
 export default {
   name: "TopHeader",
+  props: ["contacts"],
 };
 </script>
 

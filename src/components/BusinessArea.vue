@@ -58,43 +58,7 @@
 <script>
 export default {
   name: "BusinessArea",
-  props: ["icons"],
-  data() {
-    return {
-      title: [
-        {
-          name: "Audit & Assurance",
-          icon: "audit.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-        {
-          name: "Financial Advisory",
-          icon: "financial.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-        {
-          name: "Analytics and M&A",
-          icon: "analytics.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-        {
-          name: "Middle Marketing",
-          icon: "middle.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-        {
-          name: "Legal Consulting",
-          icon: "consulting.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-        {
-          name: "Regular Risk",
-          icon: "risk.svg",
-          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
-        },
-      ],
-    };
-  },
+  props: ["title"],
 };
 </script>
 

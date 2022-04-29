@@ -5,8 +5,8 @@
     <TopHeader :contacts="contacts" />
     <JumbotronHeader :nav="nav" />
     <AdvTrailer />
-    <ResultNumbers />
-    <BusinessArea />
+    <ResultNumbers :results="results" />
+    <BusinessArea :title="title" />
     <TeamArea />
     <GetInTouch :contacts="contacts" />
     <JumbotronFooter :contacts="contacts" />
@@ -56,6 +56,56 @@ export default {
           type: "position",
           info: "Main Avenue, 987",
           icon: "bi bi-geo-alt-fill",
+        },
+      ],
+      results: [
+        {
+          number: 128,
+          txt: "Certification",
+        },
+        {
+          number: 230,
+          txt: "Employees",
+        },
+        {
+          number: 517,
+          txt: "Customers",
+        },
+        {
+          number: 94,
+          txt: "Countries Served",
+        },
+      ],
+      title: [
+        {
+          name: "Audit & Assurance",
+          icon: "audit.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        {
+          name: "Financial Advisory",
+          icon: "financial.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        {
+          name: "Analytics and M&A",
+          icon: "analytics.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        {
+          name: "Middle Marketing",
+          icon: "middle.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        {
+          name: "Legal Consulting",
+          icon: "consulting.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        },
+        {
+          name: "Regular Risk",
+          icon: "risk.svg",
+          txt: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         },
       ],
     };

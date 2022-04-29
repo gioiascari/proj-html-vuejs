@@ -40,28 +40,7 @@
 <script>
 export default {
   name: "ResultNumbers",
-  data() {
-    return {
-      results: [
-        {
-          number: 128,
-          txt: "Certification",
-        },
-        {
-          number: 230,
-          txt: "Employees",
-        },
-        {
-          number: 517,
-          txt: "Customers",
-        },
-        {
-          number: 94,
-          txt: "Countries Served",
-        },
-      ],
-    };
-  },
+  props: ["results"],
 };
 </script>
 
